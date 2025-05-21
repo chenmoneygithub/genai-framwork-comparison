@@ -1,0 +1,67 @@
+[project]
+name = "genai-framwork-comparison"
+version = "0.1.0"
+description = "This is not a package, it is a project to compare the performance of different genai frameworks"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+langchain-and-langgraph = [
+    "langchain-anthropic>=0.3.13",
+    "langchain-community>=0.3.24",
+    "langchain-openai>=0.3.17",
+    "langgraph>=0.4.5",
+]
+
+
+[tool.ruff]
+include = ["**/*.py"]
+
+
+line-length = 120
+indent-width = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "C",   # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "RUF", # ruff-specific rules
+]
+
+ignore = [
+    "B027",  # Allow non-abstract empty methods in abstract base classes
+    "FBT003",# Allow boolean positional values in function calls
+    "C901",  # Ignore complexity checking
+    "E501",  # Ignore line length errors (handled by formatter)
+    "UP006", # Allow python typing modules
+    "UP035", # Allow python typing modules
+    "RUF005", # Allow using + operator to concatenate collections
+    "B904", # Allow raise custom exceptions in except blocks
+    "F403", # Allow wildcard imports
+    "E721", # Allow using == to compare with type
+    "UP031", # Allow percent format
+    "RUF022", # Allow unsorted __all__ value
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+docstring-code-format = false
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
