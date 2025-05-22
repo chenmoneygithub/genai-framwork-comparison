@@ -11,13 +11,13 @@ Because from the official LangChain doc, it highly recommends using LangGraph, I
 
 Feature overview, from what I can find:
 
-| Feature                                          | Supported?           | Developer Experience         |
+| Feature                                          | Supported?           | Dev Experience Or Comment    |
 |--------------------------------------------------|----------------------|------------------------------|
 | Agent API                                        | Y                    | Good                         |
 | Prompt Writing Helper                            | A bit                |                              |
 | Cache                                            | Y                    | Automatic, little visibility |
-| Tracing                                          | Y, through LangSmith | Very Good                    |
-|                                                  | Y                    | Good                         |
+| Tracing                                          | Y                    | Very Good                    |
+| Output Token Streaming                           | Y                    | Good                         |
 | Intermediate Streaming<br>(Tool calling message) | Y                    | Good                         |
 | Intermediate Token Streaming                     | Y                    | didn't try                   |
 | Structured Output, e.g., Pydantic as output      | Maybe                | Parser doesn't work          |
