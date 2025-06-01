@@ -17,6 +17,8 @@ langchain-and-langgraph = [
 agno = [
     "agno",
     "openai",
+    "fastapi",
+    "uvicorn",
 ]
 
 [tool.ruff]

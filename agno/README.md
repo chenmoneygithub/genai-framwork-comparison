@@ -52,6 +52,15 @@ Aside from the code I checked in, Agno supports other features for agent buildin
 knowledge (custom data) and etc. From my trial of these features, it's pretty straightforward to put them up by
 simply reading the doc.
 
+### Fantastic Playground
+
+Agno comes with a built-in playground, which is a web app that allows you to test your agent. The
+[setup documentation](https://docs.agno.com/introduction/playground) can use some improvements by explaining how to
+set up the playground instead of just showing the code, but the playground feature works fantastically.
+
+![Agno Playground](./agno_playground.png)
+
+
 ### Decent Tracing UI 
 
 Tracing is supported out of the box, but I feel I like the langsmith tracing UI better.
