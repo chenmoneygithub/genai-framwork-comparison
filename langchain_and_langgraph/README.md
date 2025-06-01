@@ -23,6 +23,7 @@ Feature overview, from what I can find:
 | Structured Output, e.g., Pydantic as output      | Maybe                | Parser doesn't work          |
 | Save/Load                                        | N                    |                              |
 | Automatic Prompt Optimization                    | N                    |                              |
+| Runnable in Ipython                              | Y                    | Good                         |
 
 Workflow experience:
 
@@ -45,8 +46,12 @@ It's a decent experience of building the airline service agent, as LangGraph pro
 an easy way `create_react_agent` to hook custom tools to LLM calls. Custom tools can
 simply be python function with the `tool` decorator. LangSmith integration is super
 solid, it's almost effortless to get my program traced, and the trace UI is very neat:
+ls
 
 ![LangSmith Trace](./langsmith_trace.png)
+
+I also played with streaming feature and it works pretty well (code not checked in though). Another kudos
+to the fact that I can run everything in IPython notebook, e.g., Colab, Jupyter, etc.
 
 ### Lots of Magic Configs
 
