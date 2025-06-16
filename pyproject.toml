@@ -21,6 +21,11 @@ agno = [
     "uvicorn",
 ]
 
+pydanticai = [
+    "pydantic-ai[logfire]",
+    "openai",
+]
+
 [tool.ruff]
 include = ["**/*.py"]
 
